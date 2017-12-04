@@ -31,7 +31,7 @@ $(document).ready(function() {
 		e.preventDefault()
 		const email = $("#binput").val()
 		const slackTeam = "open-science-network";
-		const token = 'xoxp-228228151030-228228151126-229029923764-220c63612dad016fe7d3a1fb16ba766c';
+		const token = process.env.SLACK_API_KEY;
 		const url = `https://${slackTeam}.slack.com/api/users.admin.invite`;
 
 		fetch(url, {
