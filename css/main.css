@@ -172,8 +172,10 @@ textarea {
   height: 120px;
 }
 .benefits-list li {
+  font-family: 'poppinslight';
   padding-left: 1em;
   text-indent: -1em;
+  font-size: 0.9rem;
 }
 .benefits-list li:before {
   content: "•";
