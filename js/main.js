@@ -30,20 +30,20 @@ $(document).ready(function() {
 	$("#binput-form").submit(e => {
 		e.preventDefault()
 		const email = $("#binput").val()
-		const slackTeam = "open-science-network";
-		const token = process.env.SLACK_API_KEY;
-		const url = `https://${slackTeam}.slack.com/api/users.admin.invite`;
+		const url = `http://localhost:8080`;
 
 		fetch(url, {
 		  method: 'POST',
 		  headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-		  body: `token=${token}&email=${email}`
+		  body: `email=${email}`
 		})
-		.then(function(res) {
-		  return res.text();
+		.then(function(rawData) {
+			console.log(rawData);
+		  return rawData.text();
 		})
-		.then(function(body) {
-			const data = JSON.parse(body)
+		.then(function(text) {
+			const data = JSON.parse(text)
+			console.log(data);
 			if(data.ok === true) {
 				$("#binput-form").append("<p id='binput-success'>Check your email for an invitation</p>")
 				$("#binput-form").off()
