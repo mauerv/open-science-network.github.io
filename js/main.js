@@ -30,7 +30,7 @@ $(document).ready(function() {
 	$("#binput-form").submit(e => {
 		e.preventDefault()
 		const email = $("#binput").val()
-		const url = `http://localhost:8080`;
+		const url = `http://osn-web.herokuapp.com`;
 
 		fetch(url, {
 		  method: 'POST',
@@ -38,12 +38,10 @@ $(document).ready(function() {
 		  body: `email=${email}`
 		})
 		.then(function(rawData) {
-			console.log(rawData);
 		  return rawData.text();
 		})
 		.then(function(text) {
 			const data = JSON.parse(text)
-			console.log(data);
 			if(data.ok === true) {
 				$("#binput-form").append("<p id='binput-success'>Check your email for an invitation</p>")
 				$("#binput-form").off()
