@@ -150,7 +150,7 @@ textarea {
             transition: all .3s ease-in-out; }
         #whitepaper-button:active { opacity: 1; }
 
-        #connect { background-image: url("../img/connect.png"); background-position: center bottom; background-repeat: no-repeat; height: 305px; left: 15px; position: absolute; top: 310px; width: 31px; }
+        #connect { background-image: url("../img/connect.png"); background-position: center bottom; background-repeat: no-repeat; height: 350px; left: 15px; position: absolute; top: 285px; width: 31px; }
             #connect a { display: block; height: 31px; margin-bottom: 15px; width: 31px; }
                  #connect a:hover { opacity: .7;
                 -webkit-transition: all .2s ease-in-out;
@@ -158,6 +158,7 @@ textarea {
                 -o-transition: all .2s ease-in-out;
                 transition: all .2s ease-in-out; }
             #connect-twitter { background-image: url("../img/twitter.png"); }
+            #connect-telegram { background-image: url("../img/telegram.png"); }
             #connect-facebook { background-image: url("../img/facebook.png"); }
             #connect-medium { background-image: url("../img/medium.png"); }
 
@@ -266,6 +267,7 @@ osn-web.herokuapp.com
                 -o-transition: all .2s ease-in-out;
                 transition: all .2s ease-in-out; }
             #footer-twitter { background-image: url("../img/twitter-bottom.png"); }
+            #footer-telegram { background-image: url("../img/telegram-bottom.png"); }
             #footer-facebook { background-image: url("../img/facebook-bottom.png"); }
             #footer-medium { background-image: url("../img/medium-bottom.png"); }
 

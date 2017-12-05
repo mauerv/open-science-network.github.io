@@ -16,7 +16,7 @@ function panel() {
 	};
 }
 
-$panel = new panel();
+let $panel = new panel();
 
 $(document).on("click",$panel.btnShow,function(){
 	$panel.show();
