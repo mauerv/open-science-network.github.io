@@ -43,8 +43,16 @@ $(document).ready(function() {
 		.then(function(text) {
 			const data = JSON.parse(text)
 			if(data.ok === true) {
-				$("#binput-form").append("<p id='binput-success'>Check your email for an invitation</p>")
-				$("#binput-form").off()
+				$("#binput-message").remove()
+				$("#binput-form").append("<p id='binput-message'>Check your email for an invitation</p>")
+			} else {
+				if(data.error === "already_invited") {
+					$("#binput-message").remove()
+					$("#binput-form").append("<p id='binput-message'>Your email was already invited</p>")
+				} else {
+					$("#binput-message").remove()
+					$("#binput-form").append("<p id='binput-message'>Please input a valid email</p>")
+				}
 			}
 		})
 		.catch(() => {

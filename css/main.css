@@ -246,7 +246,7 @@ osn-web.herokuapp.com
                 transition: all .2s ease-in-out; }
             #binput-send:active { background-color: #0062FF; }
         		#binput-send:focus { outline: none }
-            #binput-success { text-align: center; font-family: 'poppinsregular'; font-size: 15px; }
+            #binput-message { text-align: center; font-family: 'poppinsregular'; font-size: 15px; }
             #binput:focus { outline: none; box-shadow: 0 0 3pt 2pt #00a7ff; }
 #footer-wrapper { background-color: #02011C; color: #FFFFFF; padding: 48px 0; }
     #footer { background-image: url("../img/osn.png"); background-position: left top; background-repeat: no-repeat; margin: 0 auto; padding-left: 210px; width: 475px; }
