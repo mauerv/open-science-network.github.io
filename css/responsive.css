@@ -165,7 +165,7 @@
 
 	#binput { width: 90%; margin-bottom: 15px; padding: 12px 0 12px 10%;}
 	#binput-send { width: 100%; margin-left: 0; }
-
+	#header-wrapper { height: 700px; }
 	#content-wrapper { margin: 70px auto; }
 	#lblue-wrapper { padding: 80px 0 100px 0; }
 	#blue-wrapper { height: auto; padding: 50px 0 80px 0; }
