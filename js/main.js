@@ -3,14 +3,14 @@ function panel() {
 	this.btnClose= ".btn-close";
 	this.btnShow = ".btn-show";
 	this.backdrop = ".background-black";
-	this.hide = function (){
-		var pantalla = $(window).width();
-		var ancho = pantalla * 0.8;
-		ancho = ancho * -3;
-		$(this.div).animate({left:ancho});
+	this.hide = () => {
+		var screen = $(window).width();
+		var width = pantalla * 0.8;
+		width = width * -3;
+		$(this.div).animate({left: width});
 		$(this.backdrop).hide();
 	};
-	this.show = function (){
+	this.show = () => {
 		$(this.div).animate({left:0});
 		$(this.backdrop).fadeIn();
 	};
@@ -37,8 +37,8 @@ $(document).ready(function() {
 		  headers: {'Content-Type': 'application/x-www-form-urlencoded'},
 		  body: `email=${email}`
 		})
-		.then(function(rawData) {
-		  return rawData.text();
+		.then(function(res) {
+		  return res.text();
 		})
 		.then(function(text) {
 			const data = JSON.parse(text)
@@ -55,8 +55,9 @@ $(document).ready(function() {
 				}
 			}
 		})
-		.catch(() => {
-
+		.catch((err) => {
+			$("#binput-message").remove()
+			$("#binput-form").append("<p id='binput-message'>Something went wrong, please try again later</p>")
 		});
 	})
 })
