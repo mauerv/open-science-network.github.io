@@ -5,7 +5,7 @@ function panel() {
 	this.backdrop = ".background-black";
 	this.hide = () => {
 		var screen = $(window).width();
-		var width = pantalla * 0.8;
+		var width = screen * 0.8;
 		width = width * -3;
 		$(this.div).animate({left: width});
 		$(this.backdrop).hide();
