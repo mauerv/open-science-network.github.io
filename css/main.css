@@ -194,9 +194,11 @@ osn-web.herokuapp.com
 
 
 .bluebox-wrapper { position: relative; }
-    .bluebox { background-color: #100168; left: 0; top: -140px; padding: 50px 0 110px 0; position: absolute; width: 1030px; }
-    .bluebox2 { background-color: #100168; left: 0; top: -30px; padding: 50px 0 110px 0; position: absolute; width: 1030px; }
-        .bluebox h3, .bluebox2 h3 { color: #fff; font-family: 'poppinsbold'; font-size: 25px; margin-left: 32%; margin-bottom: 20px; position: relative; }
+    .bluebox { background-color: #100168; left: 0; padding: 50px 0 110px 0; position: absolute; width: 1030px;}
+    .bluebox1 { top: -140px; }
+    .bluebox2 { top: -30px; }
+    .bluebox3 { top: -30px; }
+        .bluebox h3 { color: #fff; font-family: 'poppinsbold'; font-size: 25px; margin-left: 32%; margin-bottom: 20px; position: relative; }
         .line-below { background-color: #fff; height: 2px; margin-left: 32%; position: relative; width: 80px; }
 
 #content-wrapper { text-align: center; padding: 128px 0; }
@@ -227,6 +229,16 @@ osn-web.herokuapp.com
     .benefits-text { margin-top: 200px; width: 312px; }
         .benefits-text h4 { color: #4217E0; font-family: 'poppinsmedium'; font-size: 22px; }
         .benefits-text p { color: #4D4D4D; font-family: 'poppinsregular'; font-size: 15px; margin-bottom: 0px; }
+
+#team-wrapper { background-color: #fff; margin-top: 50px; text-align: center; padding: 200px 0 72px; }
+.team-list { display: flex; justify-content: center; margin: auto; width: 90%; flex-wrap: wrap; }
+.team-member { margin: 30px 3% 0px 3%; width: 310px; }
+    .team-member h3 { font-family: 'poppinsmedium'; color: #100168; font-size: 16px }
+    .team-member p { font-family: 'poppinslight'; color: #6b6d6f; font-size: 14px; margin-bottom: 5px }
+    .team-member a { text-decoration: none; color: #323336; margin: auto 5px;}
+    .team-member a:hover { color: #100168 }
+.profile-pic { height: 150px; border-radius: 100% }
+
 
 #lblue-wrapper, #blue-wrapper { background-repeat: no-repeat; background-size: cover; text-align: center; }
 #lblue-wrapper { background-image: url("../img/light-blue-bg.jpg"); height: 319px; padding: 94px 0 67px; }

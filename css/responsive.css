@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1680px) {
 
-	.bluebox h3, .bluebox2 h3 { margin-left: 18%; }
+	.bluebox h3 { margin-left: 18%; }
 	.line-below { margin-left: 18%; }
 
 }
@@ -9,10 +9,10 @@
 @media only screen and (max-width: 1366px) {
 
 	#header { width: 1100px; }
-	.bluebox, .bluebox2 { width: 860px; }
+	.bluebox { width: 860px; }
 	.flow-item1, #flow-item2, #flow-item3, #flow-item4, #flow-item5, #flow-item1 { width: 500px; }
 	.benefits-text { width: 280px; }
-	.bluebox h3, .bluebox2 h3 { margin-left: 12%; }
+	.bluebox h3 { margin-left: 12%; }
 	.line-below { margin-left: 12%; }
 }
 
@@ -23,7 +23,7 @@
 		#building, #whitepaper-button { text-shadow: 0px 2px 0px rgba( 0, 0, 0, .4); }
 	.flow-item1, #flow-item2, #flow-item3, #flow-item4, #flow-item5, #flow-item1 { width: 400px; }
 	.benefits-text { width: 260px; }
-	.bluebox h3, .bluebox2 h3 { margin-left: 8%; }
+	.bluebox h3 { margin-left: 8%; }
 	.line-below { margin-left: 8%; }
 
 }
@@ -49,8 +49,9 @@
 		#connect { display: none; }
 		h1 { margin: 60px 0 40px 35px; }
 
-	.bluebox { top: -80px; padding: 30px 0 80px 0; width: 80%; }
-	.bluebox2 { top: -30px; padding: 30px 0 80px 0; width: 80%; }
+	.bluebox { padding: 30px 0 80px 0; width: 80%; }
+	.bluebox1 { top: -80px; }
+	.bluebox2 { top: -30px }
 
 	.flow-item1, #flow-item2, #flow-item3, #flow-item4, #flow-item5, #flow-item1 { width: 80%; }
 	#building { margin-left: 35px; }
@@ -63,6 +64,8 @@
 	.benefits-item { background-position: 6%; width: 75%; margin: 0 auto 20px auto; padding: 50px; }
 
 	.flow-text p { margin-bottom: 25px; }
+
+	#team-wrapper { padding-top: 100px }
 
 	#lblue-wrapper { padding: 80px 0 90px 0; }
 		.blue-content { margin: 0 auto; width: 80%; }
@@ -144,10 +147,10 @@
 	#blue-wrapper { height: 260px; }
 	#bluep { font-size: 16px; }
 	h4 { margin-bottom: 20px;font-size: 20px; }
-	.bluebox, .bluebox2 { width: 100%; }
+	.bluebox { width: 100%; }
 	.benefits-text p { font-size: 13px; }
 
-	.bluebox h3, .bluebox2 h3 { margin-left: 10%; font-size: 22px; letter-spacing: 1px; }
+	.bluebox h3 { margin-left: 10%; font-size: 22px; letter-spacing: 1px; }
 	.line-below { margin-left: 10%; }
 	h1 { font-size: 35px; width: 90%; }
 	#building { width: 80%; }
@@ -157,7 +160,7 @@
 
 @media only screen and (max-width: 520px) {
 
-	.bluebox { top: -40px; padding: 30px 0 60px 0; }
+	.bluebox1 { top: -40px; padding: 30px 0 60px 0; }
 	#building { margin-left: 0;  border-left: 0;  }
 	.width-wrap { width: 80%; }
 	.flow-item { background-position: top center; padding-left: 0; margin: 30px auto; width: 80% }
@@ -179,5 +182,5 @@
 
 @media only screen and (max-width: 380px) {
 
-	.bluebox { top: 0; }
+	.bluebox1 { top: 0; }
 }
