@@ -233,7 +233,7 @@ osn-web.herokuapp.com
 #team-wrapper { background-color: #fff; margin-top: 50px; text-align: center; padding: 200px 0 72px; }
 .team-list { display: flex; justify-content: center; margin: auto; width: 90%; flex-wrap: wrap; }
 .team-member { margin: 30px 3% 0px 3%; width: 310px; }
-    .team-member h3 { font-family: 'poppinsmedium'; color: #100168; font-size: 16px }
+    .team-member h3 { font-family: 'poppinsmedium'; color: #100168; font-size: 15px }
     .team-member p { font-family: 'poppinslight'; color: #6b6d6f; font-size: 14px; margin-bottom: 5px }
     .team-member a { text-decoration: none; color: #323336; margin: auto 5px;}
     .team-member a:hover { color: #100168 }
