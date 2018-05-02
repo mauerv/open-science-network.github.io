@@ -2,7 +2,9 @@ const express = require('express')
 const app = express()
 const fetch = require('node-fetch')
 const bodyParser = require('body-parser')
+const sslRedirect = require('heroku-ssl-redirect')
 
+app.use(sslRedirect())
 app.use(express.static(__dirname))
 app.use(bodyParser.urlencoded())
 app.use(function(req, res, next) {
