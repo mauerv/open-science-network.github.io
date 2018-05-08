@@ -229,7 +229,7 @@ osn-web.herokuapp.com
 #content-wrapper { text-align: center; }
 #content-wrapper h3 { color: #272251; font-size: 35px; font-family: 'poppinslight'; }
 #content-wrapper p { color: #272251; font-size: 18px; font-family: 'poppinslight'; max-width: 700px; margin: 25px auto; }
-  .roadmap { background-image: url(../img/roadmap.jpg); background-size: contain; background-repeat: no-repeat; height: 200px; margin: 60px auto; width: 1050px; }
+  .roadmap { background-image: url(../img/roadmap.jpg); background-size: contain; background-repeat: no-repeat; height: 200px; margin: 60px auto 30px auto; width: 1050px; }
 
     .flow-item { background-position: center top; background-repeat: no-repeat; display: inline-block; margin: 80px 36px 20px 36px; padding-top: 235px; position: relative; width: 584px; }
     #flow-item1 { background-image: url("../img/icon1.png"); }
@@ -271,7 +271,7 @@ osn-web.herokuapp.com
 
 
 .token-bg { background-image: url(../img/grey-bg.png); background-repeat: no-repeat; background-size: contain; background-color: #EAEAEA; width: 100%; }
-.list-token-wrap, .token-box-wrap, .crowdsale { margin: 0 auto; width: 1100px; }
+.list-token-wrap, .token-box-wrap, .crowdsale { margin: 0 auto; }
 .list-token-wrap { padding-top: 100px; }
   .list-token { display: inline-block; float: left; margin: 50px 1%; width: 31%; }
     h4 { color: #100168; font-size: 24px; font-family: 'poppinsmedium'; margin: 15px 0; }
@@ -323,8 +323,8 @@ osn-web.herokuapp.com
             #binput-message { text-align: center; font-family: 'poppinsregular'; font-size: 15px; }
             #binput:focus { outline: none; box-shadow: 0 0 3pt 2pt #00a7ff; }
 #footer-wrapper { background-color: #02011C; color: #FFFFFF; padding: 10px 0; }
-    #footer { margin: 0 auto; width: 1100px; }
-        #footer-text { float: right; margin-top: 27px; width: 615px; }
+    #footer { display: flex; justify-content: space-between; padding: 10px 5%; }
+        #footer-text { display: flex; align-self: flex-end; flex-grow: 1; justify-content: flex-end;}
             h5 { font-family: 'poppinsbold'; font-size: 25px; margin: 0 0 25px; }
             #footer-text p { font-family: 'poppinsregular'; font-size: 15px; margin: 10px 35px 24px; float: left; }
             #footer-text a { color: #FFFFFF; font-family: 'poppinsbold'; text-decoration: none; }
@@ -345,7 +345,7 @@ osn-web.herokuapp.com
             #footer-medium { background-image: url("../img/medium-bottom.png"); }
 
 
-  #footer-logo { background-image: url(../img/footer-logo.png); background-repeat: no-repeat; height: 90px; float: left; width: 100px; }
+  #footer-logo { background-image: url(../img/footer-logo.png); background-repeat: no-repeat; height: 90px; width: 100px; flex-grow: 1;}
 
 
 
