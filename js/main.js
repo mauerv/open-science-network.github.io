@@ -25,39 +25,3 @@ $(document).on("click",$panel.btnShow,function(){
 $(document).on("click",$panel.btnClose + "," + $panel.backdrop + "," + $panel.div + " ul li" ,function(){
 	$panel.hide();
 });
-
-$(document).ready(function() {
-	$("#binput-form").submit(e => {
-		e.preventDefault()
-		const email = $("#binput").val()
-		const url = `http://osn-web.herokuapp.com`;
-
-		fetch(url, {
-		  method: 'POST',
-		  headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-		  body: `email=${email}`
-		})
-		.then(function(res) {
-		  return res.text();
-		})
-		.then(function(text) {
-			const data = JSON.parse(text)
-			if(data.ok === true) {
-				$("#binput-message").remove()
-				$("#binput-form").append("<p id='binput-message'>Check your email for an invitation</p>")
-			} else {
-				if(data.error === "already_invited") {
-					$("#binput-message").remove()
-					$("#binput-form").append("<p id='binput-message'>Your email was already invited</p>")
-				} else {
-					$("#binput-message").remove()
-					$("#binput-form").append("<p id='binput-message'>Please input a valid email</p>")
-				}
-			}
-		})
-		.catch((err) => {
-			$("#binput-message").remove()
-			$("#binput-form").append("<p id='binput-message'>Something went wrong, please try again later</p>")
-		});
-	})
-})

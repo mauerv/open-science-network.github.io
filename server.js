@@ -18,21 +18,4 @@ app.get('/', function(req, res) {
   res.sendFile(path)
 });
 
-app.post('/', function(req, res) {
-  const slackTeam = 'open-science-network'
-  const token = process.env.SLACK_API_TOKEN
-  const email = req.body.email
-  const url = `https://${slackTeam}.slack.com/api/users.admin.invite`
-
-  fetch(url, {
-    method: 'POST',
-    headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-    body: `token=${token}&email=${email}`
-  }).then(function(data) {
-    return data.text();
-  }).then(function(data) {
-      res.send(data);
-  })
-})
-
 app.listen(process.env.PORT || 8080)
