@@ -6,6 +6,8 @@ const sslRedirect = require('heroku-ssl-redirect')
 
 const router = express.Router()
 
+app.use(sslRedirect())
+
 router.get('/', function(req, res) {
   let path = __dirname + '/token.html'
   res.sendFile(path)
@@ -13,7 +15,6 @@ router.get('/', function(req, res) {
 
 app.use(subdomain('token', router))
 
-app.use(sslRedirect())
 app.use(express.static(__dirname))
 app.use(bodyParser.urlencoded())
 
