@@ -28,12 +28,13 @@ $(document).on("click",$panel.btnClose + "," + $panel.backdrop + "," + $panel.di
 
 
 /* COUNTDOWN */
+
 const second = 1000,
       minute = second * 60,
       hour = minute * 60,
       day = hour * 24;
 
-let countDown = new Date('May 25, 2018 00:00:00').getTime(),
+let countDown = new Date('Jun 21, 2018 00:00:00').getTime(),
     x = setInterval(function() {
 
       let now = new Date().getTime(),
@@ -44,11 +45,6 @@ let countDown = new Date('May 25, 2018 00:00:00').getTime(),
         document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
         document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
 
-      //do something later when date is reached
-      //if (distance < 0) {
-      //  clearInterval(x);
-      //  'IT'S MY BIRTHDAY!;
-      //}
 
     }, second)
 
