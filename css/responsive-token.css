@@ -61,7 +61,7 @@
 	h3 { font-size: 27px; font-family: 'poppinsregular'; }
 
 	.flow-item1, #flow-item2, #flow-item3, #flow-item4, #flow-item5, #flow-item1 { width: 80%; }
-	#building { padding: 0 20px; }
+	#building { margin-left: 35px; }
 
 	#benefits-wrapper > h3 { margin: 90px 0 20px 0 !important; }
 	#benefits-wrapper { padding: 0; margin-top: 0; }
